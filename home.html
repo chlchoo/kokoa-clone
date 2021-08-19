@@ -8,35 +8,31 @@
         height: 1000vh;
         margin: 50px;
       }
-      div {
-        background-color: wheat;
-        width: 150px;
-        height: 150px;
-        position: relative;
-      }
       span {
-        background-color: tomato;
+        background-color: yellowgreen;
+        margin: 0 10px;
+        padding: 5px;
+        border-radius: 10px;
+        text-decoration: underline;
       }
-      span:nth-child(odd) {
-        background-color: teal;
+      input {
+        border: 1px solid wheat;
+      }
+      input:required {
+        border-color: tomato;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
       }
     </style>
   </head>
   <body>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
   </body>
 </html>
