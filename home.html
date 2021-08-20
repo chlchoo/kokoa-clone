@@ -4,35 +4,22 @@
     <meta charset="UTF-8" />
     <title>The Nico Times</title>
     <style>
-      body {
-        height: 1000vh;
-        margin: 50px;
+      form {
+        border: 1px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
       }
-      span {
-        background-color: yellowgreen;
-        margin: 0 10px;
-        padding: 5px;
-        border-radius: 10px;
-        text-decoration: underline;
-      }
-      input {
-        border: 1px solid wheat;
-      }
-      input:required {
-        border-color: tomato;
-      }
-      input[placeholder~="name"] {
-        background-color: pink;
+      form:hover input:focus {
+        background-color: sienna;
       }
     </style>
   </head>
   <body>
-    <div>
-      <form>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
-      </form>
-    </div>
+    <form>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </form>
   </body>
 </html>
