@@ -1,0 +1,27 @@
+.user-component__text div div {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border: 1px solid tomato;
+  border-radius: 7.5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: tomato;
+  font-weight: 600;`
+}
+
+.more-screen .icon-row {
+    margin-top: 35px;
+}
+
+.more-suggestioins {
+    margin-top: 50px;
+    border-top: var(--main-border);
+    padding-top: 40px;
+}
+
+.more-suggestioins__title {
+    margin-bottom: 30px;
+}
+
