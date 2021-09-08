@@ -28,3 +28,19 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  display: fl;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+}
+
+#splash-screen:active {
+}
