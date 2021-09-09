@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 11000vh;
+  height: 500vh;
 }
 #chat-screen .alt-header,
 #chat-screen .status-bar {
@@ -20,11 +20,23 @@
   z-index: 1;
 }
 
+@keyframes fadeInFriend {
+  from {
+    transform: translatex(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
-  margin-top: 120px;
+  margin-top: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeInFriend 0.8s linear;
 }
 
 .chat__timestamp {
@@ -42,11 +54,27 @@
   margin-bottom: 25px;
 }
 
+@keyframes profilFacePicture {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}
+
 .message-row img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
+  animation: profilFacePicture 2s ease-in-out;
 }
 
 .message__author {
@@ -74,8 +102,19 @@
   font-size: 13px;
 }
 
+@keyframes fadeInUser {
+  from {
+    transform: translatex(200px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 .message-row--own {
   justify-content: flex-end;
+  animation: fadeInUser 0.8s ease-in-out;
 }
 
 .message-row--own .message__bubble {
