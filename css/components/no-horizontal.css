@@ -1,9 +1,9 @@
-#no-mobile {
+#no-horizontal {
   display: none;
 }
 
-@media screen and (min-width: 420px) {
-  #no-mobile {
+@media (orientation: landscape) {
+  #no-horizontal {
     position: absolute;
     z-index: 99;
     height: 100vh;
@@ -20,4 +20,5 @@
     margin: 0;
     height: 100%;
     overflow: hidden;
+  }
 }
